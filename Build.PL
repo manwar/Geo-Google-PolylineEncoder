@@ -38,6 +38,11 @@ my $build = Module::Build->new
 			  'Test::Approx'  => '0.03',
 			  'Geo::Gpx'      => '0.21',
 		         },
+   meta_merge => {
+       resources => {
+           repository => 'https://github.com/spurkis/Geo-Google-PolylineEncoder'
+       }
+   },
 
   );
 
